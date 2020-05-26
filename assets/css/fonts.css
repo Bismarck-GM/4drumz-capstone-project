@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Gotham";
   font-display: swap;
-  src: local("gotham_rounded_light"),
+  src:
+    local("gotham_rounded_light"),
     url(../fonts/Gotham-Rounded-Light.otf) format("opentype");
   font-weight: 500;
   font-style: normal;
@@ -18,7 +19,8 @@
 @font-face {
   font-family: "Helvetica Neue";
   font-display: swap;
-  src: local("helvetica_neue"),
+  src:
+    local("helvetica_neue"),
     url(../fonts/HelveticaNeue-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -27,7 +29,8 @@
 @font-face {
   font-family: "Helvetica Neue Light";
   font-display: swap;
-  src: local("helvetica_neue_light"),
+  src:
+    local("helvetica_neue_light"),
     url(../fonts/HelveticaNeue-Light.otf) format("opentype");
   font-weight: 500;
   font-style: normal;
@@ -36,7 +39,8 @@
 @font-face {
   font-family: "Helvetica Neue Bold";
   font-display: swap;
-  src: local("helvetica_neue_light"),
+  src:
+    local("helvetica_neue_light"),
     url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
   font-weight: 500;
   font-style: bold;
