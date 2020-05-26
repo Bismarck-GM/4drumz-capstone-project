@@ -9,6 +9,8 @@ $grey-dark: #383838;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-main {
@@ -16,6 +18,8 @@ $grey-dark: #383838;
   height: 40px;
   width: 100%;
   background-color: $grey-dark;
+  position: fixed;
+  top: 0;
   ul {
     @include flex-centered;
   }
@@ -29,7 +33,7 @@ $grey-dark: #383838;
   background-size: cover;
   background-blend-mode: saturation;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   .sarch-container {
     @include flex-centered;
     select {
@@ -63,8 +67,6 @@ $grey-dark: #383838;
 }
 
 .publicity-slider {
-  @include flex-centered;
-  height: 500px;
   background-color: blanchedalmond;
 }
 

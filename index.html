@@ -34,7 +34,7 @@
     </header>
     <section class="search-section">
       <h1>4drumz</h1>
-      <h5>Buying and selling percusion couldn't be simpler than this!</h5>
+      <h2>Buying and selling percusion couldn't be simpler than this!</h2>
       <div class="search-container">
         <select name="cars" id="cars">
           <option value="Departments" disabled selected>Departments</option>
@@ -50,6 +50,7 @@
     </section>
     <section class="publicity-slider">
       <div class="glide">
+        HOT ADS
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">0</li>
@@ -68,19 +69,33 @@
             >
           </button>
         </div>
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-          <button class="glide__bullet" data-glide-dir="=0"></button>
-          <button class="glide__bullet" data-glide-dir="=1"></button>
-          <button class="glide__bullet" data-glide-dir="=2"></button>
-          <button class="glide__bullet" data-glide-dir="=3"></button>
-          <button class="glide__bullet" data-glide-dir="=4"></button>
+      </div>
+    </section>
+    <section class="product-sections">
+      <div class="section-title">
+        <i></i>
+        <h3>Cimbals</h3>
+        <h5>(Crashes, Rides, splashes, china's, etc...)</h5>
+        <hr />
+      </div>
+      <div class="product-sections-grid">
+        <div class="grid-item">
+          <div class="item-image"></div>
+          <a href="#"></a>
+          <p class="status"></p>
+          <p class="from">From: <a href="#"></a></p>
         </div>
       </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-      new Glide(".glide").mount();
+      const hot_ads = {
+        type: "carousel",
+        perView: 1,
+      };
+
+      new Glide(".glide", hot_ads).mount();
     </script>
   </body>
 </html>
