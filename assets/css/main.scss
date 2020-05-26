@@ -52,6 +52,7 @@ body {
       width: 100%;
       max-width: 100%;
       -webkit-box-sizing: border-box;
+      box-sizing: border-box;
       border: 1px solid #aaa;
       -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
@@ -134,6 +135,41 @@ body {
   .section-title {
     display: flex;
   }
+
+  hr {
+    width: 80%;
+    align-self: center;
+  }
+  .product-sections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 5%;
+    .grid-item {
+      padding: 10%;
+      background-color: white;
+      background-size: 100%;
+      border-radius: 15px;
+      .item-images {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 100%;
+        margin-bottom: 10px;
+      }
+
+      .item-info > * {
+        margin: 5px;
+      }
+
+      .item-footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 0 5px;
+      }
+    }
+  }
 }
 
 .extender {
@@ -141,6 +177,10 @@ body {
   background-color: red;
 }
 .hot-ads-item1 {
+  background-image: url(../images/Ziljian-A-Custom.jpg);
+}
+
+.item1 {
   background-image: url(../images/Ziljian-A-Custom.jpg);
 }
 
