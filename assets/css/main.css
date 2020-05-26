@@ -10,9 +10,9 @@
 }
 
 .mobile-image {
-  color: #888888;
+  color: #888;
   background-image: url(../images/learning-to-drum.jpg);
-  background-position: 50%;
+  background-position: 95%;
   background-size: cover;
   background-blend-mode: saturation;
   width: 100%;
@@ -25,5 +25,8 @@
   background: #888888;
   background: -webkit-gradient(linear, left bottom, left top, from(#888888), to(rgba(211, 82, 102, 0.804359)));
   background: linear-gradient(0deg, #888888 0%, rgba(211, 82, 102, 0.804359) 100%);
+  font-family: "Gotham";
+  font-size: 60px;
+  color: #888;
 }
 /*# sourceMappingURL=main.css.map */

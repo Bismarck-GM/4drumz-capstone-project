@@ -1,5 +1,5 @@
 $pink: #d35266;
-$grey: #888888;
+$grey: #888;
 $grey-dark: #383838;
 
 * {
@@ -15,7 +15,7 @@ $grey-dark: #383838;
 .mobile-image {
   color: $grey;
   background-image: url(../images/learning-to-drum.jpg);
-  background-position: 50%;
+  background-position: 95%;
   background-size: cover;
   background-blend-mode: saturation;
   width: 100%;
@@ -29,5 +29,8 @@ $grey-dark: #383838;
       rgba(136, 136, 136, 1) 0%,
       rgba(211, 82, 102, 0.804359243697479) 100%
     );
+    font-family: "Gotham";
+    font-size: 60px;
+    color: $grey;
   }
 }
