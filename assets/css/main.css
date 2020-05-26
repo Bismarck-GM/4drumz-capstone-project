@@ -180,6 +180,16 @@ body {
       flex-basis: 70%;
 }
 
+.product-sections {
+  background-color: #f0f0f0;
+}
+
+.product-sections .section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .extender {
   height: 1000px;
   background-color: red;

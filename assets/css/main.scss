@@ -128,6 +128,14 @@ body {
   }
 }
 
+.product-sections {
+  background-color: #f0f0f0;
+
+  .section-title {
+    display: flex;
+  }
+}
+
 .extender {
   height: 1000px;
   background-color: red;
