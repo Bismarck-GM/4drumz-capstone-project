@@ -233,8 +233,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 5px 0;
-  padding: 0 5px;
+  padding: 10% 5px 0 5px;
+  font-size: 20px;
 }
 
 .extender {
