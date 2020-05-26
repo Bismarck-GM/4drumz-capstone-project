@@ -1,0 +1,29 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-main {
+  height: 40px;
+  width: 100%;
+  background-color: #383838;
+}
+
+.mobile-image {
+  color: #888888;
+  background-image: url(../images/learning-to-drum.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-blend-mode: saturation;
+  width: 100%;
+  height: 500px;
+}
+
+.mobile-image .mobile-image-gradient {
+  width: 100%;
+  height: 100%;
+  background: #888888;
+  background: -webkit-gradient(linear, left bottom, left top, from(#888888), to(rgba(211, 82, 102, 0.804359)));
+  background: linear-gradient(0deg, #888888 0%, rgba(211, 82, 102, 0.804359) 100%);
+}
+/*# sourceMappingURL=main.css.map */

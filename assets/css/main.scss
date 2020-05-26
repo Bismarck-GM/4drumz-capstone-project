@@ -1,0 +1,33 @@
+$pink: #d35266;
+$grey: #888888;
+$grey-dark: #383838;
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-main {
+  height: 40px;
+  width: 100%;
+  background-color: $grey-dark;
+}
+
+.mobile-image {
+  color: $grey;
+  background-image: url(../images/learning-to-drum.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-blend-mode: saturation;
+  width: 100%;
+  height: 500px;
+  .mobile-image-gradient {
+    width: 100%;
+    height: 100%;
+    background: rgb(136, 136, 136);
+    background: linear-gradient(
+      0deg,
+      rgba(136, 136, 136, 1) 0%,
+      rgba(211, 82, 102, 0.804359243697479) 100%
+    );
+  }
+}
