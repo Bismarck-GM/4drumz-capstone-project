@@ -111,6 +111,8 @@ body {
 
         .item-buttons {
           display: flex;
+          max-width: 300px;
+          max-height: 100px;
 
           button:first-child {
             flex-basis: 28%;

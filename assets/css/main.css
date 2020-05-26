@@ -165,6 +165,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 300px;
+  max-height: 100px;
 }
 
 .publicity-slider .glide .item-container .item-info .item-buttons button:first-child {
