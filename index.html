@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/glide.core.min.css" />
+    <link rel="stylesheet" href="assets/css/glide.theme.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
@@ -36,15 +38,49 @@
       <div class="search-container">
         <select name="cars" id="cars">
           <option value="Departments" disabled selected>Departments</option>
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+          <option value="volvo">Cimbals</option>
+          <option value="saab">Drums</option>
+          <option value="opel">Hardware</option>
+          <option value="audi">Others</option>
         </select>
         <input type="text" placeholder="What do you search for ?" />
         <input type="text" placeholder="Where" />
         <button>Search</button>
       </div>
     </section>
+    <section class="publicity-slider">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">0</li>
+            <li class="glide__slide">1</li>
+            <li class="glide__slide">2</li>
+            <li class="glide__slide">3</li>
+            <li class="glide__slide">4</li>
+            <li class="glide__slide">5</li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            >
+          </button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+          <button class="glide__bullet" data-glide-dir="=4"></button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide(".glide").mount();
+    </script>
   </body>
 </html>
