@@ -26,6 +26,7 @@ body {
   background-color: #383838;
   position: fixed;
   top: 0;
+  z-index: 99;
 }
 
 .nav-main ul {
@@ -138,9 +139,9 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   padding-top: 100%;
 }
 
@@ -156,6 +157,27 @@ body {
   margin-bottom: 2%;
 }
 
+.publicity-slider .glide .item-container .item-info p {
+  margin-bottom: 3%;
+}
+
+.publicity-slider .glide .item-container .item-info .item-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.publicity-slider .glide .item-container .item-info .item-buttons button:first-child {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  border-right: 1px solid #383838;
+}
+
+.publicity-slider .glide .item-container .item-info .item-buttons button:last-child {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
 .extender {
   height: 1000px;
   background-color: red;
@@ -165,5 +187,108 @@ body {
   background-image: url(../images/Ziljian-A-Custom.jpg);
 }
 
-/*---- SLIDER STYLES ----*/
+/* ---- HELPER CLASSES ---- */
+.btn-pink {
+  background-color: #d35266;
+  color: white;
+  padding: 5%;
+  border: 1px;
+}
+
+/* ---- SLIDER STYLES ---- */
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  color: #d35266;
+  text-transform: uppercase;
+  padding: 9px 12px;
+  background-color: transparent;
+  border: 1px solid #888;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: opacity 150ms ease, border 300ms ease-in-out;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  line-height: 1;
+}
+
+.glide__arrow:focus {
+  outline: none;
+}
+
+.glide__arrow:hover {
+  border-color: white;
+}
+
+.glide__arrow--left {
+  left: -4%;
+}
+
+.glide__arrow--right {
+  right: -4%;
+}
+
+.glide__arrow--disabled {
+  opacity: 0.33;
+}
+
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em;
+}
+
+.glide__bullet:focus {
+  outline: none;
+}
+
+.glide__bullet:hover,
+.glide__bullet:focus {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.glide__bullet--active {
+  background-color: white;
+}
+
+.glide--swipeable {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.glide--dragging {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
 /*# sourceMappingURL=main.css.map */
