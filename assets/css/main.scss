@@ -139,6 +139,10 @@ i {
   flex-direction: column;
   margin: 15px 0;
 
+  .publicity-slider-title {
+    align-self: normal;
+    padding-left: 3%;
+  }
   .glide {
     width: 90%;
 
@@ -187,6 +191,10 @@ i {
             flex-basis: 70%;
             border-radius: 0 3px 3px 0;
           }
+
+          i {
+            margin-right: 5px;
+          }
         }
       }
     }
@@ -195,6 +203,7 @@ i {
 
 .product-sections {
   background-color: #f0f0f0;
+  position: relative;
 
   .section-title {
     display: flex;
@@ -202,10 +211,11 @@ i {
     background-color: #f0f0f0;
     position: sticky;
     top: 40px;
+    z-index: 98;
 
     i {
       font-size: 23px;
-      margin-right: 10%;
+      margin-right: 22px;
       color: $grey;
     }
 
@@ -235,7 +245,7 @@ i {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 5%;
-    height: 85vh;
+    height: 90vh;
     .grid-item {
       padding: 10%;
       background-color: white;
@@ -267,6 +277,10 @@ i {
       }
     }
   }
+}
+
+.mobile-grid-controls {
+  display: none;
 }
 
 .extender {
@@ -328,14 +342,14 @@ i {
 .glide__bullets {
   position: absolute;
   z-index: 2;
-  bottom: 2em;
+  bottom: 0.5em;
   left: 50%;
   display: inline-flex;
   list-style: none;
   transform: translateX(-50%);
 }
 .glide__bullet {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: $grey;
   width: 9px;
   height: 9px;
   padding: 0;
@@ -352,11 +366,10 @@ i {
 }
 .glide__bullet:hover,
 .glide__bullet:focus {
-  border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: $pink;
 }
 .glide__bullet--active {
-  background-color: white;
+  background-color: $pink;
 }
 .glide--swipeable {
   cursor: grab;
