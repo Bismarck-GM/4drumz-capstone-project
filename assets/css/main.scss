@@ -44,24 +44,43 @@ body {
   @include flex-centered;
   flex-direction: column;
   background-color: $pink;
-  background-position: 95%;
-  background-size: cover;
-  background-blend-mode: saturation;
+  background-image: url(../images/logos/Drums.svg);
+  background-position: -200px 50%;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  .sarch-container {
+
+  .main-logo {
+    background-image: url(../images/logos/4drumz.svg);
+    background-repeat: no-repeat;
+    height: 110px;
+    width: 75%;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .search-form {
     @include flex-centered;
-    select {
+    padding-top: 50px;
+    flex-direction: column;
+    width: 80%;
+
+    & > * {
+      margin-bottom: 20px;
       font-size: 16px;
-      font-family: Helvetica Neue;
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
       font-weight: 500;
       line-height: 1.3;
-      padding: 0.6em 0.4em 0.5em 1.8em;
+      padding: 0.6em 0.4em 0.5em 12%;
+    }
+    select {
+      order: 2;
+      padding: 0.6em 0.4em 0.5em 12%;
       width: 100%;
       max-width: 100%;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      border: 1px solid #aaa;
+      border: 1px solid $pink;
       -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
       -moz-appearance: none;
@@ -73,11 +92,19 @@ body {
       background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E),
         linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
       background-repeat: no-repeat, repeat;
-      background-position: left 10% top 50%, 0 0;
+      background-position: left 2% top 50%, 0 0;
       background-size: 0.65em auto, 100%;
     }
+    input {
+      width: 100%;
+      order: 1;
+    }
     button {
+      order: 3;
       display: block;
+      background-color: $grey-dark;
+      color: $grey;
+      width: 100%;
     }
   }
 }
