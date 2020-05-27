@@ -17,7 +17,7 @@ $grey-dark: #383838;
 
 body {
   font-size: 12px;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
   color: $grey-dark;
 }
 
@@ -29,8 +29,14 @@ body {
   position: fixed;
   top: 0;
   z-index: 99;
+  justify-content: space-between;
   ul {
     @include flex-centered;
+    justify-content: space-between;
+    flex-basis: 90%;
+  }
+  ul:last-child {
+    display: none;
   }
   .nav-logo {
     background-image: url(../images/logos/4drumzLogo.svg);
@@ -95,9 +101,9 @@ body {
       -webkit-appearance: none;
       appearance: none;
       background-color: #fff;
-      background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E),
+      background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23383838%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E),
         -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5e5e5));
-      background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E),
+      background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23383838%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E),
         linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
       background-repeat: no-repeat, repeat;
       background-position: left 4% top 50%, 0 0;
@@ -127,6 +133,7 @@ body {
 .publicity-slider {
   @include flex-centered();
   flex-direction: column;
+  margin: 15px 0;
 
   .glide {
     width: 90%;
@@ -150,14 +157,15 @@ body {
 
       .item-info {
         grid-column: 2 / 4;
+        padding: 2% 0 0 5%;
 
         h2 {
           font-size: 16px;
           color: $pink;
-          margin-bottom: 2%;
+          margin-bottom: 5%;
         }
         p {
-          margin-bottom: 3%;
+          margin-bottom: 4%;
         }
 
         .item-buttons {
@@ -167,11 +175,13 @@ body {
 
           button:first-child {
             flex-basis: 28%;
-            border-right: 1px solid #383838;
+            border-right: 0.5px solid $grey;
+            border-radius: 3px 0 0 3px;
           }
 
           button:last-child {
             flex-basis: 70%;
+            border-radius: 0 3px 3px 0;
           }
         }
       }
@@ -184,11 +194,36 @@ body {
 
   .section-title {
     display: flex;
-  }
+    padding: 2% 0 2% 10%;
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 40px;
 
-  hr {
-    width: 80%;
-    align-self: center;
+    h3 {
+      font-size: 15px;
+      font-weight: bold;
+      padding: 10px 0;
+      margin-right: 10px;
+      line-height: 0px;
+    }
+    h5 {
+      font-size: 10px;
+      color: $grey;
+      padding: 10px 0;
+      line-height: 0px;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .border-bottom {
+      position: absolute;
+      width: 100%;
+      border-bottom: 0.5px solid $grey;
+      left: 0;
+      bottom: 0;
+    }
   }
   .product-sections-grid {
     display: grid;
@@ -217,6 +252,12 @@ body {
         justify-content: space-between;
         padding: 10% 5px 0 5px;
         font-size: 20px;
+
+        a:first-child {
+          border: 0.5px solid grey;
+          padding: 1% 4% 2% 4%;
+          background-color: lightgray;
+        }
       }
     }
   }
@@ -251,7 +292,7 @@ body {
   z-index: 2;
   color: $pink;
   text-transform: uppercase;
-  padding: 9px 12px;
+  padding: 6px 8px;
   background-color: transparent;
   border: 1px solid #888;
   border-radius: 15px;
