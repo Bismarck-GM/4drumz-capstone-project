@@ -41,6 +41,15 @@ body {
           justify-content: center;
 }
 
+.nav-main .nav-logo {
+  background-image: url(../images/logos/4drumzLogo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 40px;
+  width: 115px;
+}
+
 .search-section {
   display: -webkit-box;
   display: -ms-flexbox;

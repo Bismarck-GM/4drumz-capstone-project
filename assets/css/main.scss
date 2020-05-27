@@ -30,6 +30,14 @@ body {
   ul {
     @include flex-centered;
   }
+  .nav-logo {
+    background-image: url(../images/logos/4drumzLogo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 40px;
+    width: 115px;
+  }
 }
 
 .search-section {
