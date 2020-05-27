@@ -13,7 +13,14 @@ body {
   color: #383838;
 }
 
-i {
+body a {
+  font-family: "Gotham", Arial, Helvetica, sans-serif;
+  color: #383838;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body i {
   font-family: "Fontawesome", Arial, Helvetica, sans-serif;
 }
 
@@ -203,6 +210,8 @@ i {
       -ms-grid-row-align: normal;
       align-self: normal;
   padding-left: 3%;
+  font-weight: bold;
+  color: #888;
 }
 
 .publicity-slider .glide {
@@ -325,7 +334,7 @@ i {
       grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 5%;
-  height: 90vh;
+  height: 80%;
 }
 
 .product-sections .product-sections-grid .grid-item {
@@ -333,6 +342,7 @@ i {
   background-color: white;
   background-size: 100%;
   border-radius: 15px;
+  min-height: 300px;
 }
 
 .product-sections .product-sections-grid .grid-item .item-images {
@@ -351,6 +361,12 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -358,10 +374,13 @@ i {
   font-size: 20px;
 }
 
-.product-sections .product-sections-grid .grid-item .item-footer a:first-child {
-  border: 0.5px solid grey;
-  padding: 1% 4% 2% 4%;
-  background-color: lightgray;
+.product-sections .product-sections-grid .grid-item .item-footer .add {
+  font-size: 24px;
+  color: #dbdbdb;
+}
+
+.product-sections .product-sections-grid .grid-item .item-footer .price a {
+  color: #d35266;
 }
 
 .mobile-grid-controls {

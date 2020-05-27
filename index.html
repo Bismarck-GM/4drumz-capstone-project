@@ -164,8 +164,8 @@
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
-                    <a href="#">+</a>
-                    <a href="#">Price</a>
+                    <div class="add"><i class="far fa-plus-square"></i></div>
+                    <div class="price"><a href="#">Price</a></div>
                   </div>
                 </div>
                 <div class="grid-item">
@@ -409,6 +409,8 @@
       const hot_ads = {
         type: "carousel",
         perView: 1,
+        autoplay: 4000,
+        animationDuration: 2500,
       };
       const mobile_grid = {
         type: "carousel",
