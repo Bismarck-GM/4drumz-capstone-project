@@ -273,7 +273,6 @@ body {
       background-color: white;
       background-size: 100%;
       border-radius: 15px;
-      min-height: 300px;
       .item-images {
         background-position: center;
         background-repeat: no-repeat;
@@ -308,10 +307,27 @@ body {
   display: none;
 }
 
-.extender {
-  height: 1000px;
-  background-color: red;
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr, 1fr;
+  padding: 2%;
+  border-top: 1px solid $grey;
+  .footer-legend {
+    @include flex-centered();
+    flex-direction: column;
+    grid-column: 1 / 3;
+    .legend-logo {
+      background-image: url(../images/logos/4drumz-Footer-Logo.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      height: 40px;
+      width: 115px;
+    }
+  }
 }
+
 .hot-ads-item1 {
   background-image: url(../images/Ziljian-A-Custom.jpg);
 }
