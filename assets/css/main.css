@@ -58,8 +58,13 @@ body i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
+  -ms-flex-preferred-size: 98%;
+      flex-basis: 98%;
+}
+
+.nav-main ul a {
+  color: #888;
+  font-size: 10px;
 }
 
 .nav-main ul:last-child {
@@ -94,21 +99,42 @@ body i {
   background-position: -200px 50%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100%;
   height: 100vh;
+  min-height: 100%;
   padding-bottom: 10%;
 }
 
-.search-section .main-logo {
+.search-section .main-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.search-section .main-titles .main-logo {
   background-image: url(../images/logos/4drumz.svg);
   background-repeat: no-repeat;
-  height: 110px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   width: 75%;
   background-size: cover;
   background-position: 50%;
   margin-bottom: 20px;
-  margin-top: 10%;
-  padding-bottom: 22%;
+  padding-bottom: 25%;
 }
 
 .search-section h2 {
@@ -117,7 +143,6 @@ body i {
   width: 80%;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .search-section .search-form {
