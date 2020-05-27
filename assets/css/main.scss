@@ -21,6 +21,10 @@ body {
   color: $grey-dark;
 }
 
+i {
+  font-family: "Fontawesome", Arial, Helvetica, sans-serif;
+}
+
 .nav-main {
   @include flex-centered;
   height: 40px;
@@ -194,29 +198,32 @@ body {
 
   .section-title {
     display: flex;
-    padding: 2% 0 2% 10%;
+    padding: 2% 0 2% 2%;
     background-color: #f0f0f0;
     position: sticky;
     top: 40px;
 
+    i {
+      font-size: 25px;
+      margin-right: 2%;
+      color: $grey;
+    }
+
     h3 {
       font-size: 15px;
       font-weight: bold;
-      padding: 10px 0;
+      // padding: 10px 0;
       margin-right: 10px;
       line-height: 0px;
     }
+
     h5 {
       font-size: 10px;
       color: $grey;
-      padding: 10px 0;
+      // padding: 10px 0;
       line-height: 0px;
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
     }
+
     .border-bottom {
       position: absolute;
       width: 100%;
@@ -230,6 +237,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 5%;
+    height: 85vh;
     .grid-item {
       padding: 10%;
       background-color: white;

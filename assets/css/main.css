@@ -13,6 +13,10 @@ body {
   color: #383838;
 }
 
+i {
+  font-family: "Fontawesome", Arial, Helvetica, sans-serif;
+}
+
 .nav-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,17 +271,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2% 0 2% 10%;
+  padding: 2% 0 2% 2%;
   background-color: #f0f0f0;
   position: -webkit-sticky;
   position: sticky;
   top: 40px;
 }
 
+.product-sections .section-title i {
+  font-size: 25px;
+  margin-right: 2%;
+  color: #888;
+}
+
 .product-sections .section-title h3 {
   font-size: 15px;
   font-weight: bold;
-  padding: 10px 0;
   margin-right: 10px;
   line-height: 0px;
 }
@@ -285,14 +294,7 @@ body {
 .product-sections .section-title h5 {
   font-size: 10px;
   color: #888;
-  padding: 10px 0;
   line-height: 0px;
-}
-
-.product-sections .section-title h5::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .product-sections .section-title .border-bottom {
@@ -310,6 +312,7 @@ body {
       grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 5%;
+  height: 85vh;
 }
 
 .product-sections .product-sections-grid .grid-item {
