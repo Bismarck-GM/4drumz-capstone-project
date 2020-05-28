@@ -601,7 +601,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 70%;
+    &::after {
+      padding-top: 56.25%;
+      display: block;
+      content: "";
+    }
   }
   .search-item-info {
     display: grid;
@@ -624,8 +628,9 @@ body {
     }
     h5 {
       color: $pink;
-      font-size: 16px;
+      font-size: 14px;
       font-family: $HNB;
+      margin-bottom: 10px;
     }
     .date {
       color: $grey;

@@ -809,7 +809,12 @@ body i {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 70%;
+}
+
+.items-results .search-item-img::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
 }
 
 .items-results .search-item-info {
@@ -847,8 +852,9 @@ body i {
 
 .items-results .search-item-info h5 {
   color: #d35266;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Helvetica Neue Bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
 }
 
 .items-results .search-item-info .date {
