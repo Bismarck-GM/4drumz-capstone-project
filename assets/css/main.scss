@@ -335,15 +335,24 @@ body {
     }
   }
 
-  .footer-links {
-    display: flex;
-    font-size: 16px;
+  .links-title {
+    font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color: $pink;
-    div {
-      flex-basis: 50%;
-    }
-    ul a {
-      font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid $pink;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+  }
+  .links-list {
+    display: flex;
+    ul {
+      flex-grow: 1;
+      li {
+        margin: 5px 0;
+      }
+      a {
+        color: $grey;
+      }
     }
   }
 }

@@ -458,21 +458,33 @@ body i {
   color: #919aa1;
 }
 
-.footer-grid .footer-links {
+.footer-grid .links-title {
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #d35266;
+  border-bottom: 2px solid #d35266;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+}
+
+.footer-grid .links-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
-  color: #d35266;
 }
 
-.footer-grid .footer-links div {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.footer-grid .links-list ul {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.footer-grid .footer-links ul a {
-  font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
+.footer-grid .links-list ul li {
+  margin: 5px 0;
+}
+
+.footer-grid .links-list ul a {
+  color: #888;
 }
 
 .hot-ads-item1 {
