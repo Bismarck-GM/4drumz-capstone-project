@@ -1,6 +1,11 @@
 $pink: #d35266;
 $grey: #888;
 $grey-dark: #383838;
+$G: "Gotham Bold", Arial, Helvetica, sans-serif;
+$GB: "Gotham Bold", Arial, Helvetica, sans-serif;
+$HN: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$HNL: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
+$HNB: "Helvetica Neue Bold", Arial, Helvetica, sans-serif;
 @mixin flex-centered {
   display: flex;
   align-items: center;
@@ -585,6 +590,34 @@ body {
   padding: 20px 15px;
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
+}
+
+.items-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 6px;
+  .search-item-img {
+    background-image: url(../images/search1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70%;
+  }
+  .search-item-info {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 20px;
+    justify-content: center;
+    .item-header,
+    .item-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .item-header h2 {
+      color: $grey-dark;
+      font-size: 14px;
+    }
+  }
 }
 
 @media screen and (min-width: 450px) {
