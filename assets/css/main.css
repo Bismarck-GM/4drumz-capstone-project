@@ -757,7 +757,7 @@ body i {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  padding: 2%;
+  padding: 30px 0 30px 30px;
   font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
   color: #888;
 }
@@ -769,7 +769,7 @@ body i {
 }
 
 .filters .filters-title {
-  width: 40%;
+  width: 85%;
   font-size: 16px;
   font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
   color: #383838;
@@ -788,6 +788,12 @@ body i {
 .filters form label,
 .filters input {
   margin-right: 10px;
+}
+
+.print-search-results {
+  padding: 20px 15px;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
 }
 
 @media screen and (min-width: 450px) {
