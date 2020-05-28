@@ -17,6 +17,10 @@ HTML & CSS Capstone Project is based on an online shop for electronics. Followin
 
 [Click here](https://raw.githack.com/Bismarck-GM/4drumz-capstone-project/development/index.html) for a live preview.
 
+## Video demonstrating the web-page
+
+[Click here](https://www.loom.com/share/38aba8c1de99466bac46a34c9520d93b)
+
 ### Usage
 
 - Download all the files and don't change any directory of them.
