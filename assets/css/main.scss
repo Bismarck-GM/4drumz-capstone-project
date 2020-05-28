@@ -45,12 +45,21 @@ body {
     @include flex-centered;
     justify-content: space-between;
     flex-basis: 98%;
+    li {
+      margin-right: 2px;
+    }
     a {
       color: $grey;
       font-size: 10px;
     }
+    i {
+      margin-right: 3px;
+    }
   }
   ul:last-child {
+    display: none;
+  }
+  .nav-button {
     display: none;
   }
   .nav-logo {
@@ -59,7 +68,7 @@ body {
     background-size: cover;
     background-position: 50%;
     height: 40px;
-    width: 115px;
+    width: 88px;
   }
 }
 
@@ -499,4 +508,13 @@ body {
   cursor: grabbing;
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
+}
+
+@media screen and (min-width: 450px) {
+  .nav-main {
+    .nav-logo {
+      height: 40px;
+      width: 122px;
+    }
+  }
 }
