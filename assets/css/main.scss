@@ -357,7 +357,6 @@ body {
     }
   }
   .footer-options {
-    // @include flex-centered();
     li {
       display: flex;
       justify-content: flex-end;
@@ -379,6 +378,29 @@ body {
         border: 1px solid $grey;
         height: 30px;
         flex-grow: 1;
+      }
+    }
+  }
+  .footer-copyright {
+    display: block;
+    border-top: 1px solid $grey;
+
+    .copyright-left {
+      @include flex-centered();
+      text-align: center;
+      margin-top: 15px;
+    }
+    .copyright-right {
+      @include flex-centered();
+      margin-top: 15px;
+    }
+    ul {
+      @include flex-centered();
+      li {
+        text-align: center;
+        margin-right: 15px;
+        font-size: 25px;
+        color: $grey;
       }
     }
   }
