@@ -540,6 +540,7 @@ body i {
 .footer-grid .footer-copyright {
   display: block;
   border-top: 1px solid #888;
+  color: #919aa1;
 }
 
 .footer-grid .footer-copyright .copyright-left {
@@ -585,7 +586,10 @@ body i {
   text-align: center;
   margin-right: 15px;
   font-size: 25px;
-  color: #888;
+}
+
+.footer-grid .footer-copyright ul li i {
+  color: #919aa1;
 }
 
 .hot-ads-item1 {

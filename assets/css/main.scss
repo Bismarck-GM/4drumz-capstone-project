@@ -393,9 +393,10 @@ body {
   .footer-copyright {
     display: block;
     border-top: 1px solid $grey;
-
+    color: #919aa1;
     .copyright-left {
       @include flex-centered();
+
       text-align: center;
       margin-top: 15px;
     }
@@ -409,7 +410,9 @@ body {
         text-align: center;
         margin-right: 15px;
         font-size: 25px;
-        color: $grey;
+        i {
+          color: #919aa1;
+        }
       }
     }
   }
