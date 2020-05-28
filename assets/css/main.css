@@ -460,7 +460,7 @@ body i {
 
 .footer-grid .links-title {
   font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #d35266;
   border-bottom: 2px solid #d35266;
   padding-bottom: 2px;
@@ -486,6 +486,43 @@ body i {
 .footer-grid .links-list ul a {
   font-family: "Gotham", Arial, Helvetica, sans-serif;
   color: #888;
+}
+
+.footer-grid .footer-options li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #d35266;
+  margin-bottom: 15px;
+}
+
+.footer-grid .footer-options li .selector-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+.footer-grid .footer-options li button {
+  width: 65%;
+  font-family: "Gotham", Arial, Helvetica, sans-serif;
+  color: #888;
+  background-color: white;
+  border: 1px solid #888;
+  height: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .hot-ads-item1 {

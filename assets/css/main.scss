@@ -337,7 +337,7 @@ body {
 
   .links-title {
     font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     color: $pink;
     border-bottom: 2px solid $pink;
     padding-bottom: 2px;
@@ -353,6 +353,32 @@ body {
       a {
         font-family: "Gotham", Arial, Helvetica, sans-serif;
         color: $grey;
+      }
+    }
+  }
+  .footer-options {
+    // @include flex-centered();
+    li {
+      display: flex;
+      justify-content: flex-end;
+      font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: $pink;
+      margin-bottom: 15px;
+      .selector-title {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        flex-basis: 35%;
+      }
+      button {
+        width: 65%;
+        font-family: "Gotham", Arial, Helvetica, sans-serif;
+        color: $grey;
+        background-color: white;
+        border: 1px solid $grey;
+        height: 30px;
+        flex-grow: 1;
       }
     }
   }
