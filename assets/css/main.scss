@@ -595,7 +595,7 @@ body {
 .items-results {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 6px;
+  padding: 30px;
   .search-item-img {
     background-image: url(../images/search1.jpg);
     background-position: center;
@@ -607,15 +607,30 @@ body {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     margin-top: 20px;
-    justify-content: center;
     .item-header,
     .item-footer {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      .add {
+        font-size: 24px;
+        color: #dbdbdb;
+      }
     }
     .item-header h2 {
       color: $grey-dark;
-      font-size: 14px;
+      font-size: 16px;
+      font-family: $HNB;
+    }
+    h5 {
+      color: $pink;
+      font-size: 16px;
+      font-family: $HNB;
+    }
+    .date {
+      color: $grey;
+      font-size: 12px;
+      font-family: $HNB;
     }
   }
 }

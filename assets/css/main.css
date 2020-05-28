@@ -801,7 +801,7 @@ body i {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  padding: 6px;
+  padding: 30px;
 }
 
 .items-results .search-item-img {
@@ -818,9 +818,6 @@ body i {
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
   margin-top: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .items-results .search-item-info .item-header,
@@ -831,11 +828,33 @@ body i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items-results .search-item-info .item-header .add,
+.items-results .search-item-info .item-footer .add {
+  font-size: 24px;
+  color: #dbdbdb;
 }
 
 .items-results .search-item-info .item-header h2 {
   color: #383838;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "Helvetica Neue Bold", Arial, Helvetica, sans-serif;
+}
+
+.items-results .search-item-info h5 {
+  color: #d35266;
+  font-size: 16px;
+  font-family: "Helvetica Neue Bold", Arial, Helvetica, sans-serif;
+}
+
+.items-results .search-item-info .date {
+  color: #888;
+  font-size: 12px;
+  font-family: "Helvetica Neue Bold", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 450px) {
