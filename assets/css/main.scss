@@ -117,7 +117,6 @@ body {
 
   .search-form {
     @include flex-centered;
-    padding-top: 50px;
     flex-direction: column;
     width: 80%;
 
@@ -562,21 +561,20 @@ body {
   .search-form {
     justify-self: flex-start;
     align-self: flex-start;
-    padding-top: 20px;
     width: 80%;
     & > * {
       margin-bottom: 5px;
     }
-    input,
-    select,
     button {
-      padding: 2px 2px 2px 25px;
-      background-position: left 8px top 50%, 0 0;
-      height: 32px;
+      order: 3;
+      display: block;
+      background-color: $grey-dark;
+      color: $grey;
+      width: 100%;
+      padding: 2% 0;
     }
   }
 }
-
 .filters {
   display: grid;
   grid-template-columns: 1fr;
@@ -868,6 +866,20 @@ body {
   }
 
   /* --- RESULT.HTML --- */
+  .search-section.search-main {
+    .main-titles {
+      margin-bottom: 30px;
+    }
+    .search-form {
+      button {
+        padding: 5px;
+        width: 10%;
+        height: 125%;
+        margin: 0 0 0 15px;
+        border: 0;
+      }
+    }
+  }
   .main-results-grid {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -880,6 +892,25 @@ body {
     }
     .items-results {
       grid-template-columns: 30% 70%;
+      padding: 10px;
+      .search-item-img {
+        &::after {
+          padding-top: 100%;
+        }
+      }
+      .search-item-info {
+        padding-left: 15px;
+        h2,
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+        .date {
+          font-size: 20px;
+        }
+      }
     }
     .filters {
       grid-column: 1 / 2;
@@ -941,6 +972,9 @@ body {
     }
   }
   /* --- RESULT.HTML --- */
+  .search-section.search-main {
+    padding: 20px 8%;
+  }
   .main-results-grid {
     padding: 2% 8%;
 
