@@ -174,6 +174,7 @@ body {
   margin: 15px 0;
 
   h2 {
+    font-family: $HNB;
     font-size: 16px;
     color: $pink;
     margin-bottom: 5%;
@@ -287,14 +288,28 @@ body {
       background-color: white;
       background-size: 100%;
       border-radius: 15px;
-      .item-images {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        padding-top: 100%;
-        margin-bottom: 10px;
-      }
+      .image-wrapper {
+        width: 100%;
+        display: inline-block;
+        position: relative;
 
+        &::after {
+          padding-top: 75%;
+          display: block;
+          content: "";
+        }
+        .item-images {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin-bottom: 10px;
+        }
+      }
       .item-info > * {
         margin: 5px;
       }
@@ -431,7 +446,6 @@ body {
   background-image: url(../images/Ziljian-A-Custom.jpg);
 }
 
-/* ---- HELPER CLASSES ---- */
 .btn-pink {
   background-color: $pink;
   color: white;
@@ -441,7 +455,7 @@ body {
   font-family: $G;
 }
 
-/* ---- SLIDER STYLES ---- */
+/* ---------------------------- SLIDER STYLES - COPIED FROM ORIGINAL - EDITED ---------------------------- */
 
 .glide__arrow {
   position: absolute;
@@ -520,7 +534,8 @@ body {
   cursor: -webkit-grabbing;
 }
 
-/* ---Search.html--- */
+/* ---------------------------- Search.html ---------------------------- */
+
 .search-section.search-main {
   height: 335px;
   padding: 20px;
@@ -642,6 +657,7 @@ body {
   }
 }
 
+/* ---------------------------- MQ NAV LOGO RESIZE ---------------------------- */
 @media screen and (min-width: 450px) {
   .nav-main {
     .nav-logo {
@@ -651,6 +667,8 @@ body {
     }
   }
 }
+
+/* ---------------------------- MQ +768 ---------------------------- */
 
 @media screen and (min-width: 769px) {
   body {
@@ -788,18 +806,112 @@ body {
     }
   }
   .publicity-slider {
+    @include flex-centered();
     max-height: 400px;
+    padding: 0 8%;
     .glide {
-      width: 90%;
+      width: 100%;
       max-height: 360px;
     }
     h2 {
       font-size: 30px;
     }
+    p {
+      margin-bottom: 10px;
+    }
     .glide {
       .item-container {
+        grid-template-columns: repeat(12, 1fr);
         padding: 0;
         max-height: 360px;
+        .item-image-container {
+          grid-column: 1 / 5;
+          max-height: 360px;
+          max-width: 360px;
+        }
+        .item-info {
+          grid-column: 5 / 13;
+        }
+      }
+    }
+  }
+  .product-sections {
+    height: 400px;
+    .section-title {
+      top: 60px;
+      padding: 20px 8%;
+      h3,
+      h5 {
+        font-size: 20px;
+      }
+    }
+    .product-sections-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 5%;
+
+      .grid-item {
+        padding: 15px;
+        max-width: 180px;
+        max-height: 300px;
+        justify-content: center;
+        .image-wrapper {
+          width: 100%;
+          display: inline-block;
+          position: relative;
+
+          &::after {
+            padding-top: 100%;
+            display: block;
+            content: "";
+          }
+          .item-images {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+          }
+        }
+        .item-info > * {
+        }
+
+        .item-footer {
+          .add {
+          }
+        }
+      }
+    }
+  }
+  .mobile-grid-controls {
+    display: block;
+  }
+  .glide__arrow--left {
+    left: 0;
+  }
+  .glide__arrow--right {
+    right: 0;
+  }
+}
+
+/* ---------------------------- MQ +1200 ---------------------------- */
+
+@media screen and (min-width: 1200px) {
+  .publicity-slider {
+    p {
+      margin-bottom: 30px;
+    }
+    .glide {
+      .item-container {
+        .item-image-container {
+          grid-column: 2 / 5;
+        }
+        .item-info {
+          padding: 20px 0;
+          button {
+            font-size: 18px;
+          }
+        }
       }
     }
   }
