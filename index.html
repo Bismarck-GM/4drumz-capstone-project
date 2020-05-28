@@ -43,7 +43,7 @@
         <h2>Buying and selling percusion couldn't be simpler than this!</h2>
       </div>
       <form class="search-form">
-        <select name="cars" id="cars">
+        <select name="section-selector" id="section-selector">
           <option value="All-Sections" selected>All Sections</option>
           <option value="cymbals">Cymbals</option>
           <option value="drums">Drums</option>
@@ -990,7 +990,19 @@
           </div>
         </div>
       </div>
-      <div class="footer-options"></div>
+      <div class="footer-options">
+        <form class="search-form">
+          <select name="section-selector" id="section-selector">
+            <option value="All-Sections" selected>All Sections</option>
+            <option value="cymbals">Cymbals</option>
+            <option value="drums">Drums</option>
+            <option value="hardware">Hardware</option>
+            <option value="others">Others</option>
+          </select>
+          <input type="text" placeholder="What do you search for ?" />
+          <input type="text" placeholder="Where" />
+          <button>Search</button>
+      </div>
       <div class="footer-copyright"></div>
     </footer>
 
