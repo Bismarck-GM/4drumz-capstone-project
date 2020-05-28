@@ -704,6 +704,92 @@ body i {
   cursor: -webkit-grabbing;
 }
 
+/* ---Search.html--- */
+.search-section.search-main {
+  height: 335px;
+  padding: 20px;
+  background-position: 250px 50%;
+  background-size: contain;
+}
+
+.search-section.search-main .main-titles {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding-top: 0;
+}
+
+.search-section.search-main .main-titles .main-logo {
+  width: 200px;
+  margin-bottom: 0px;
+  padding-bottom: 60px;
+}
+
+.search-section.search-main .main-titles h2 {
+  width: 80%;
+  font-size: 14px;
+  text-align: inherit;
+}
+
+.search-section.search-main .search-form {
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 20px;
+  width: 80%;
+}
+
+.search-section.search-main .search-form > * {
+  margin-bottom: 5px;
+}
+
+.search-section.search-main .search-form input,
+.search-section.search-main .search-form select,
+.search-section.search-main .search-form button {
+  padding: 2px 2px 2px 25px;
+  background-position: left 8px top 50%, 0 0;
+  height: 32px;
+}
+
+.filters {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 2%;
+  font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
+  color: #888;
+}
+
+.filters .status-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filters .filters-title {
+  width: 40%;
+  font-size: 16px;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  color: #383838;
+  border-bottom: 1px solid #888;
+}
+
+.filters > * {
+  margin-bottom: 12px;
+}
+
+.filters form > * {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.filters form label,
+.filters input {
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 450px) {
   .nav-main .nav-logo {
     height: 40px;

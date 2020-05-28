@@ -513,6 +513,74 @@ body {
   cursor: -webkit-grabbing;
 }
 
+/* ---Search.html--- */
+.search-section.search-main {
+  height: 335px;
+  padding: 20px;
+  background-position: 250px 50%;
+  background-size: contain;
+  .main-titles {
+    display: block;
+    flex: none;
+    padding-top: 0;
+    .main-logo {
+      width: 200px;
+      margin-bottom: 0px;
+      padding-bottom: 60px;
+    }
+    h2 {
+      width: 80%;
+      font-size: 14px;
+      text-align: inherit;
+    }
+  }
+  .search-form {
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding-top: 20px;
+    width: 80%;
+    & > * {
+      margin-bottom: 5px;
+    }
+    input,
+    select,
+    button {
+      padding: 2px 2px 2px 25px;
+      background-position: left 8px top 50%, 0 0;
+      height: 32px;
+    }
+  }
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2%;
+  font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
+  color: $grey;
+  .status-check {
+    display: flex;
+  }
+  .filters-title {
+    width: 40%;
+    font-size: 16px;
+    font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+    color: $grey-dark;
+    border-bottom: 1px solid $grey;
+  }
+  & > * {
+    margin-bottom: 12px;
+  }
+  form > * {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  form label,
+  input {
+    margin-right: 10px;
+  }
+}
+
 @media screen and (min-width: 450px) {
   .nav-main {
     .nav-logo {
