@@ -866,6 +866,28 @@ body {
   .glide__arrow--right {
     right: 0;
   }
+
+  /* --- RESULT.HTML --- */
+  .main-results-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 80px auto;
+
+    .items-results,
+    .print-search-results {
+      grid-column: 2 / 3;
+      border-top: 0;
+    }
+    .items-results {
+      grid-template-columns: 30% 70%;
+    }
+    .filters {
+      grid-column: 1 / 2;
+      position: sticky;
+      top: 60px;
+      height: 440px;
+    }
+  }
 }
 
 /* ---------------------------- MQ +1200 ---------------------------- */
@@ -916,6 +938,19 @@ body {
       grid-row: 2 / 3;
       display: flex;
       justify-content: space-between;
+    }
+  }
+  /* --- RESULT.HTML --- */
+  .main-results-grid {
+    padding: 2% 8%;
+
+    .items-results,
+    .print-search-results {
+    }
+    .items-results {
+    }
+    .filters {
+      padding-left: 0;
     }
   }
 }
