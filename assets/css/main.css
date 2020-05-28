@@ -246,6 +246,16 @@ body i {
   margin: 15px 0;
 }
 
+.publicity-slider h2 {
+  font-size: 16px;
+  color: #d35266;
+  margin-bottom: 5%;
+}
+
+.publicity-slider p {
+  margin-bottom: 4%;
+}
+
 .publicity-slider .publicity-slider-title {
   -ms-flex-item-align: normal;
       -ms-grid-row-align: normal;
@@ -287,16 +297,6 @@ body i {
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
   padding: 2% 0 0 5%;
-}
-
-.publicity-slider .glide .item-container .item-info h2 {
-  font-size: 16px;
-  color: #d35266;
-  margin-bottom: 5%;
-}
-
-.publicity-slider .glide .item-container .item-info p {
-  margin-bottom: 4%;
 }
 
 .publicity-slider .glide .item-container .item-info .item-buttons {
@@ -606,6 +606,8 @@ body i {
   color: white;
   padding: 3%;
   border: 1px;
+  border-radius: 3px;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
 }
 
 /* ---- SLIDER STYLES ---- */
@@ -812,7 +814,7 @@ body i {
 }
 
 .items-results .search-item-img::after {
-  padding-top: 56.25%;
+  padding-top: 62.5%;
   display: block;
   content: "";
 }
@@ -867,6 +869,217 @@ body i {
   .nav-main .nav-logo {
     height: 40px;
     width: 122px;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 20px;
+  }
+  .nav-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60px;
+    width: 100%;
+    background-color: #383838;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-preferred-size: 98%;
+        flex-basis: 98%;
+  }
+  .nav-main ul .nav-logo {
+    height: 60px;
+    width: 190px;
+  }
+  .nav-main ul li {
+    margin-right: 2px;
+  }
+  .nav-main ul a {
+    color: #888;
+    font-size: 14px;
+  }
+  .nav-main ul i {
+    margin-right: 3px;
+  }
+  .nav-main ul:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-right: 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav-main .nav-button {
+    display: block;
+    padding: 5px 5px;
+  }
+  .search-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #d35266;
+    background-image: url(../images/logos/Drums.svg);
+    background-position: -200px 50%;
+    background-repeat: no-repeat;
+    height: 415px;
+    padding: 0 0 30px 0;
+  }
+  .search-section .main-titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    padding-top: 0px;
+  }
+  .search-section .main-titles .main-logo {
+    background-image: url(../images/logos/4drumz.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    max-height: 190px;
+    max-width: 310px;
+  }
+  .search-section .main-titles .main-logo::after {
+    padding-top: 62.5%;
+    display: block;
+    content: "";
+  }
+  .search-section h2 {
+    font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
+    color: white;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -20px;
+  }
+  .search-section .search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 16px;
+    font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
+    height: 40px;
+  }
+  .search-section .search-form input,
+  .search-section .search-form select {
+    margin: 0 2px 0 0;
+    padding: 2px 2px 2px 25px;
+    background-position: left 8px top 50%, 0 0;
+    height: 50px;
+    border-radius: 0;
+  }
+  .search-section .search-form select {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 20%;
+    max-width: 100%;
+    border: 1px solid #888;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23383838%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e5e5e5));
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23383838%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: left 4% top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+  }
+  .search-section .search-form select:focus {
+    outline: none;
+  }
+  .search-section .search-form input {
+    width: 35%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border: 0;
+  }
+  .search-section .search-form button {
+    padding: 5px;
+    width: 10%;
+    height: 125%;
+    margin: 0 0 0 15px;
+    border: 0;
+  }
+  .publicity-slider {
+    max-height: 400px;
+  }
+  .publicity-slider .glide {
+    width: 90%;
+    max-height: 360px;
+  }
+  .publicity-slider h2 {
+    font-size: 30px;
+  }
+  .publicity-slider .glide .item-container {
+    padding: 0;
+    max-height: 360px;
   }
 }
 /*# sourceMappingURL=main.css.map */
