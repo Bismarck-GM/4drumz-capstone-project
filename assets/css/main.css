@@ -815,8 +815,8 @@ body i {
 .items-results .search-item-info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   margin-top: 20px;
 }
 

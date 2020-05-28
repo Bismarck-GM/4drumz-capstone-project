@@ -605,7 +605,7 @@ body {
   }
   .search-item-info {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto;
     margin-top: 20px;
     .item-header,
     .item-footer {
