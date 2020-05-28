@@ -893,6 +893,8 @@ body {
     .items-results {
       grid-template-columns: 30% 70%;
       padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #f0f0f0;
       .search-item-img {
         &::after {
           padding-top: 100%;

@@ -1192,6 +1192,8 @@ body i {
     -ms-grid-columns: 30% 70%;
         grid-template-columns: 30% 70%;
     padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #f0f0f0;
   }
   .main-results-grid .items-results .search-item-img::after {
     padding-top: 100%;
