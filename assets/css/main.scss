@@ -38,14 +38,16 @@ body {
 }
 
 .nav-main {
-  @include flex-centered;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 40px;
   width: 100%;
   background-color: $grey-dark;
   position: fixed;
   top: 0;
   z-index: 99;
-  justify-content: space-between;
+
   ul {
     @include flex-centered;
     justify-content: space-between;
@@ -581,18 +583,18 @@ body {
   padding: 30px 0 30px 30px;
   font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
   color: $grey;
-  .status-check {
-    display: flex;
-  }
-  .filters-title {
-    width: 85%;
-    font-size: 16px;
-    font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
-    color: $grey-dark;
-    border-bottom: 1px solid $grey;
-  }
   & > * {
     margin-bottom: 12px;
+    .status-check {
+      display: flex;
+    }
+    .filters-title {
+      width: 85%;
+      font-size: 16px;
+      font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+      color: $grey-dark;
+      border-bottom: 1px solid $grey;
+    }
   }
   form > * {
     margin-bottom: 8px;

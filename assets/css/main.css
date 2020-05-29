@@ -31,18 +31,15 @@ body i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 40px;
   width: 100%;
   background-color: #383838;
   position: fixed;
   top: 0;
   z-index: 99;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .nav-main ul {
@@ -785,22 +782,22 @@ body i {
   color: #888;
 }
 
-.filters .status-check {
+.filters > * {
+  margin-bottom: 12px;
+}
+
+.filters > * .status-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.filters .filters-title {
+.filters > * .filters-title {
   width: 85%;
   font-size: 16px;
   font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
   color: #383838;
   border-bottom: 1px solid #888;
-}
-
-.filters > * {
-  margin-bottom: 12px;
 }
 
 .filters form > * {
