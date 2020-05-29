@@ -24,17 +24,17 @@ body {
   font-size: 12px;
   font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
   color: $grey-dark;
+}
 
-  a {
-    font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
-    color: $grey-dark;
-    text-decoration: none;
-    font-weight: bold;
-  }
+a {
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  color: $grey-dark;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  i {
-    font-family: "Fontawesome", Arial, Helvetica, sans-serif;
-  }
+i {
+  font-family: "Fontawesome", Arial, Helvetica, sans-serif;
 }
 
 .nav-main {
@@ -55,10 +55,7 @@ body {
     li {
       margin-right: 2px;
     }
-    a {
-      color: $grey;
-      font-size: 10px;
-    }
+
     i {
       margin-right: 3px;
     }
@@ -77,6 +74,11 @@ body {
     height: 40px;
     width: 88px;
   }
+}
+
+.nav-links {
+  color: $grey;
+  font-size: 10px;
 }
 
 .search-section {
