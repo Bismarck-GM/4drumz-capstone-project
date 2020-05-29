@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "app.sass",
+        "0-plugins/plugins-dir.sass",
+        "1-base/base-dir.sass",
+        "2-layouts/layouts-dir.sass",
+        "3-modules/modules-dir.sass"
+    ],
+    "names": [],
+    "file": "app.css"
+}
