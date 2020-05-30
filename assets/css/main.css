@@ -83,6 +83,10 @@ i {
   font-size: 10px;
 }
 
+.nav-links.active {
+  color: #b2505f;
+}
+
 .search-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,20 +350,20 @@ i {
   z-index: 98;
 }
 
-.product-sections .section-title i {
+.product-sections .section-title .section-title-icon {
   font-size: 23px;
   margin-right: 22px;
   color: #888;
 }
 
-.product-sections .section-title h3 {
+.product-sections .section-title h2 {
   font-size: 15px;
   font-weight: bold;
   padding: 4px 0 0 0;
   margin-right: 5%;
 }
 
-.product-sections .section-title h5 {
+.product-sections .section-title h3 {
   font-size: 10px;
   color: #888;
   padding: 6px 0 0 0;
@@ -373,7 +377,7 @@ i {
   bottom: 0;
 }
 
-.product-sections .product-sections-grid {
+.product-sections-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -383,26 +387,26 @@ i {
   height: 80%;
 }
 
-.product-sections .product-sections-grid .grid-item {
+.grid-item {
   padding: 10%;
   background-color: white;
   background-size: 100%;
   border-radius: 15px;
 }
 
-.product-sections .product-sections-grid .grid-item .image-wrapper {
+.grid-item .image-wrapper {
   width: 100%;
   display: inline-block;
   position: relative;
 }
 
-.product-sections .product-sections-grid .grid-item .image-wrapper::after {
-  padding-top: 75%;
+.grid-item .image-wrapper::after {
+  padding-top: 56.25%;
   display: block;
   content: "";
 }
 
-.product-sections .product-sections-grid .grid-item .image-wrapper .item-images {
+.grid-item .image-wrapper .item-images {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,14 +415,14 @@ i {
   bottom: 0;
   right: 0;
   left: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.product-sections .product-sections-grid .grid-item .item-info > * {
+.grid-item .item-info > * {
   margin: 5px;
 }
 
-.product-sections .product-sections-grid .grid-item .item-footer {
+.grid-item .item-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,12 +439,12 @@ i {
   font-size: 20px;
 }
 
-.product-sections .product-sections-grid .grid-item .item-footer .add {
+.grid-item .item-footer .add {
   font-size: 24px;
   color: #dbdbdb;
 }
 
-.product-sections .product-sections-grid .grid-item .item-footer .price a {
+.grid-item .item-footer .price a {
   color: #d35266;
 }
 
@@ -622,7 +626,7 @@ i {
 }
 
 .item1 {
-  background-image: url(../images/ziljian-avedis-square-picture.jpg);
+  background-image: url(../images/Avedis-kit-wide.jpg);
 }
 
 /* ---------------------------- HELPER CLASSES ---------------------------- */
