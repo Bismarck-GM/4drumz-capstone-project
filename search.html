@@ -18,26 +18,32 @@
   <body>
     <header>
       <nav class="nav-main">
-        <ul class="">
+        <ul class="nav-main-left">
           <li>
             <a href="index.html">
               <div class="nav-logo"></div>
             </a>
           </li>
-          <li class="active">
-            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          <li>
+            <a class="nav-links" href="index.html"
+              ><i class="fas fa-home"></i>Home</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-puzzle-piece"></i>Collections</a>
+            <a class="nav-links active" href="search.html"
+              ><i class="fas fa-puzzle-piece"></i>Collections</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-shopping-cart"></i> Purchase List</a>
+            <a class="nav-links" href="#"
+              ><i class="fas fa-shopping-cart"></i> Purchase List</a
+            >
           </li>
           <li>
             <button class="nav-button btn-pink">POST AN ADD</button>
           </li>
         </ul>
-        <ul>
+        <ul class="nav-main-right">
           <li>
             <a href="#"><i class="fas fa-envelope"></i></a>
           </li>
@@ -45,13 +51,13 @@
         </ul>
       </nav>
     </header>
-    <section class="search-section search-main">
+    <section class="search-section">
       <div class="main-titles">
         <div class="main-logo"></div>
-        <h2>Buying and selling percusion couldn't be simpler than this!</h2>
+        <h1>Buying and selling percusion couldn't be simpler than this!</h1>
       </div>
-      <form class="search-form">
-        <select name="section-selector" id="section-selector">
+      <form class="search-form" action="search.html">
+        <select name="section-selector">
           <option value="All-Sections" selected>All Sections</option>
           <option value="cymbals">Cymbals</option>
           <option value="drums">Drums</option>
@@ -60,7 +66,7 @@
         </select>
         <input type="text" placeholder="What do you search for ?" />
         <input type="text" placeholder="Where" />
-        <button>Search</button>
+        <button type="submit" value="submit">Search</button>
       </form>
     </section>
     <div class="main-results-grid">
