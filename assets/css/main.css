@@ -441,9 +441,6 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -639,8 +636,152 @@ i {
   background-image: url(../images/ziljian-avedis-square-picture.jpg);
 }
 
+.hot-ads-item2 {
+  background-image: url(../images/hot-ads-item2.jpg);
+}
+
+.hot-ads-item3 {
+  background-image: url(../images/hot-ads-item3.jpg);
+}
+
+.hot-ads-item4 {
+  background-image: url(../images/hot-ads-item4.jpg);
+}
+
+.hot-ads-item5 {
+  background-image: url(../images/hot-ads-item5.jpg);
+}
+
+.hot-ads-item6 {
+  background-image: url(../images/hot-ads-item6.jpg);
+}
+
 .item1 {
   background-image: url(../images/Avedis-kit-wide.jpg);
+}
+
+.item2 {
+  background-image: url(../images/grid-items/cymbals/item2.jpg);
+}
+
+.item3 {
+  background-image: url(../images/grid-items/cymbals/item3.jpg);
+}
+
+.item4 {
+  background-image: url(../images/grid-items/cymbals/item4.jpg);
+}
+
+.item5 {
+  background-image: url(../images/grid-items/cymbals/item5.jpg);
+}
+
+.item6 {
+  background-image: url(../images/grid-items/cymbals/item6.jpg);
+}
+
+.item7 {
+  background-image: url(../images/grid-items/cymbals/item7.jpg);
+}
+
+.item8 {
+  background-image: url(../images/grid-items/cymbals/item8.jpg);
+}
+
+.item9 {
+  background-image: url(../images/grid-items/cymbals/item9.jpg);
+}
+
+.item10 {
+  background-image: url(../images/grid-items/cymbals/item10.jpg);
+}
+
+.item11 {
+  background-image: url(../images/grid-items/cymbals/item11.jpg);
+}
+
+.item12 {
+  background-image: url(../images/grid-items/cymbals/item12.jpg);
+}
+
+.item13 {
+  background-image: url(../images/grid-items/cymbals/item13.jpg);
+}
+
+.item14 {
+  background-image: url(../images/grid-items/cymbals/item14.jpg);
+}
+
+.item15 {
+  background-image: url(../images/grid-items/cymbals/item15.jpg);
+}
+
+.item16 {
+  background-image: url(../images/grid-items/cymbals/item16.jpg);
+}
+
+.item17 {
+  background-image: url(../images/grid-items/snares/item17.jpg);
+}
+
+.item18 {
+  background-image: url(../images/grid-items/snares/item18.jpg);
+}
+
+.item19 {
+  background-image: url(../images/grid-items/snares/item19.jpg);
+}
+
+.item20 {
+  background-image: url(../images/grid-items/snares/item20.jpg);
+}
+
+.item21 {
+  background-image: url(../images/grid-items/snares/item21.jpg);
+}
+
+.item22 {
+  background-image: url(../images/grid-items/snares/item22.jpg);
+}
+
+.item23 {
+  background-image: url(../images/grid-items/snares/item23.jpg);
+}
+
+.item24 {
+  background-image: url(../images/grid-items/snares/item24.jpg);
+}
+
+.item25 {
+  background-image: url(../images/grid-items/snares/item25.jpg);
+}
+
+.item26 {
+  background-image: url(../images/grid-items/snares/item26.jpg);
+}
+
+.item27 {
+  background-image: url(../images/grid-items/snares/item27.jpg);
+}
+
+.item28 {
+  background-image: url(../images/grid-items/snares/item28.jpg);
+}
+
+.item29 {
+  background-image: url(../images/grid-items/snares/item29.jpg);
+}
+
+.item30 {
+  background-image: url(../images/grid-items/snares/item30.jpg);
+}
+
+.item31 {
+  background-image: url(../images/grid-items/snares/item31.jpg);
+}
+
+.item32 {
+  background-image: url(../images/grid-items/snares/item32.jpg);
 }
 
 /* ---------------------------- HELPER CLASSES ---------------------------- */
@@ -1283,7 +1424,7 @@ i {
     justify-self: flex-end;
   }
   .footer-grid {
-    padding: 2% 8%;
+    padding: 2% 3%;
     -ms-grid-columns: (min-max(50px, 1fr))[12];
         grid-template-columns: repeat(12, min-max(50px, 1fr));
     grid-gap: 20px;
