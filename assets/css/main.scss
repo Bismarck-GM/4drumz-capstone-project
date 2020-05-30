@@ -765,39 +765,33 @@ i {
     font-size: 20px;
   }
   .nav-main {
-    @include flex-centered;
     height: 60px;
-    justify-content: space-between;
-    ul {
-      @include flex-centered;
-      justify-content: space-between;
-      flex-basis: 98%;
-      .nav-logo {
-        height: 60px;
-        width: 190px;
-      }
-      li {
-        margin-right: 2px;
-      }
-      a {
-        color: $grey;
-        font-size: 14px;
-      }
-      i {
-        margin-right: 3px;
-      }
-    }
-    ul:last-child {
-      display: flex;
-      flex-basis: 30%;
-      margin-right: 20px;
-      justify-content: space-around;
-    }
-    .nav-button {
-      display: block;
-      padding: 5px 5px;
+  }
+
+  .nav-main-left {
+    flex-basis: 80%;
+    li,
+    i {
+      margin-right: 2px;
     }
   }
+  .nav-logo {
+    width: 120px;
+  }
+  .nav-button {
+    display: block;
+    font-size: 12px;
+  }
+  .nav-main-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+  }
+  .nav-links {
+    font-size: 14px;
+  }
+
   .search-section {
     @include flex-centered;
     flex-direction: column;
@@ -830,7 +824,7 @@ i {
         max-width: 310px;
       }
     }
-    h2 {
+    h1 {
       font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
       color: white;
       width: 80%;
