@@ -18,40 +18,46 @@
   <body>
     <header>
       <nav class="nav-main">
-        <ul class="">
+        <ul class="nav-main-left">
           <li>
             <a href="index.html">
               <div class="nav-logo"></div>
             </a>
           </li>
-          <li class="active">
-            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          <li>
+            <a class="nav-links active" href="index.html"
+              ><i class="fas fa-home"></i>Home</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-puzzle-piece"></i>Collections</a>
+            <a class="nav-links" href="search.html"
+              ><i class="fas fa-puzzle-piece"></i>Collections</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-shopping-cart"></i> Purchase List</a>
+            <a class="nav-links" href="#"
+              ><i class="fas fa-shopping-cart"></i> Purchase List</a
+            >
           </li>
           <li>
             <button class="nav-button btn-pink">POST AN ADD</button>
           </li>
         </ul>
-        <ul>
+        <ul class="nav-main-right">
           <li>
-            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a class="nav-links" href="#"><i class="fas fa-envelope"></i></a>
           </li>
-          <li><a href="#">User</a></li>
+          <li><a class="nav-links" href="#">User</a></li>
         </ul>
       </nav>
     </header>
     <section class="search-section">
       <div class="main-titles">
         <div class="main-logo"></div>
-        <h2>Buying and selling percusion couldn't be simpler than this!</h2>
+        <h1>Buying and selling percusion couldn't be simpler than this!</h1>
       </div>
       <form class="search-form" action="search.html">
-        <select name="section-selector" id="section-selector">
+        <select name="section-selector">
           <option value="All-Sections" selected>All Sections</option>
           <option value="cymbals">Cymbals</option>
           <option value="drums">Drums</option>
@@ -84,8 +90,8 @@
                     Location: <a href="#">San Francisco California</a>
                   </p>
                   <div class="item-buttons">
-                    <button class="btn-pink">$450</button>
-                    <button class="btn-pink">
+                    <button>$450</button>
+                    <button>
                       <i class="fas fa-shopping-cart"></i>Purchase Details
                     </button>
                   </div>
@@ -95,7 +101,7 @@
             <li class="glide__slide">
               <div class="item-container">
                 <div class="item-image-container">
-                  <div class="item-img hot-ads-item1"></div>
+                  <div class="item-img hot-ads-item2"></div>
                 </div>
                 <div class="item-info">
                   <h2>Zildjian Crash</h2>
@@ -119,7 +125,7 @@
             <li class="glide__slide">
               <div class="item-container">
                 <div class="item-image-container">
-                  <div class="item-img hot-ads-item1"></div>
+                  <div class="item-img hot-ads-item3"></div>
                 </div>
                 <div class="item-info">
                   <h2>Zildjian Crash</h2>
@@ -143,7 +149,7 @@
             <li class="glide__slide">
               <div class="item-container">
                 <div class="item-image-container">
-                  <div class="item-img hot-ads-item1"></div>
+                  <div class="item-img hot-ads-item4"></div>
                 </div>
                 <div class="item-info">
                   <h2>Zildjian Crash</h2>
@@ -167,7 +173,7 @@
             <li class="glide__slide">
               <div class="item-container">
                 <div class="item-image-container">
-                  <div class="item-img hot-ads-item1"></div>
+                  <div class="item-img hot-ads-item5"></div>
                 </div>
                 <div class="item-info">
                   <h2>Zildjian Crash</h2>
@@ -191,7 +197,7 @@
             <li class="glide__slide">
               <div class="item-container">
                 <div class="item-image-container">
-                  <div class="item-img hot-ads-item1"></div>
+                  <div class="item-img hot-ads-item6"></div>
                 </div>
                 <div class="item-info">
                   <h2>Zildjian Crash</h2>
@@ -226,9 +232,9 @@
     </section>
     <section class="product-sections">
       <div class="section-title">
-        <i class="fas fa-record-vinyl"></i>
-        <h3>Cymbals</h3>
-        <h5>(Crashes, Rides, splashes, china's, etc...)</h5>
+        <i class="fas fa-record-vinyl section-title-icon"></i>
+        <h2>Cymbals</h2>
+        <h3>(Crashes, Rides, splashes, china's, etc...)</h3>
         <div class="border-bottom"></div>
       </div>
 
@@ -237,242 +243,242 @@
           <ul class="glide__slides">
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
                     <a href="#"><div class="item-images item1"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item2"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item3"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item4"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item5"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item6"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item7"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item8"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item9"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item10"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item11"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item12"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item13"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item14"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item15"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item16"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
           </ul>
@@ -481,10 +487,16 @@
           class="glide__arrows mobile-grid-controls"
           data-glide-el="controls"
         >
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <button
+            class="glide__arrow glide__arrow--left arrow-left-desktop"
+            data-glide-dir="<"
+          >
             &lt;
           </button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <button
+            class="glide__arrow glide__arrow--right arrow-right-desktop"
+            data-glide-dir=">"
+          >
             >
           </button>
         </div>
@@ -499,9 +511,9 @@
 
     <section class="product-sections">
       <div class="section-title">
-        <i class="fas fa-drum"></i>
-        <h3>Snares</h3>
-        <h5>(Woodden, steel, drumheads, etc)</h5>
+        <i class="fas fa-drum section-title-icon"></i>
+        <h2>Snares</h2>
+        <h3>(Woodden, steel, drumheads, etc)</h3>
         <div class="border-bottom"></div>
       </div>
 
@@ -510,242 +522,242 @@
           <ul class="glide__slides">
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item17"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item18"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item19"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item20"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item21"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item22"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item23"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item24"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item25"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item26"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item27"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item28"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item29"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item30"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item31"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item32"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
           </ul>
@@ -754,10 +766,16 @@
           class="glide__arrows mobile-grid-controls"
           data-glide-el="controls"
         >
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <button
+            class="glide__arrow glide__arrow--left arrow-left-desktop"
+            data-glide-dir="<"
+          >
             &lt;
           </button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <button
+            class="glide__arrow glide__arrow--right arrow-right-desktop"
+            data-glide-dir=">"
+          >
             >
           </button>
         </div>
@@ -772,9 +790,9 @@
 
     <section class="product-sections">
       <div class="section-title">
-        <i class="fas fa-drum-steelpan"></i>
-        <h3>Percussion</h3>
-        <h5>(Bongoes, cowbell's, etc)</h5>
+        <i class="fas fa-drum-steelpan section-title-icon"></i>
+        <h2>Percussion</h2>
+        <h3>(Bongoes, cowbell's, etc)</h3>
         <div class="border-bottom"></div>
       </div>
 
@@ -783,242 +801,242 @@
           <ul class="glide__slides">
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item33"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item34"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item35"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item36"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item37"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item38"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item39"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item40"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item41"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item42"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item43"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item44"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
             <li class="glide__slide">
               <div class="product-sections-grid">
-                <div class="grid-item">
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item45"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item46"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item47"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
-                <div class="grid-item">
+                </article>
+                <article class="grid-item">
                   <div class="image-wrapper">
-                    <a href="#"><div class="item-images item1"></div></a>
+                    <a href="#"><div class="item-images item48"></div></a>
                   </div>
                   <div class="item-info">
-                    <a href="#">Paiste Ride 18"</a>
-                    <p class="status">Used</p>
+                    <a class="item-title" href="#"><h3>Paiste Ride 18"</h3></a>
+                    <a class="status">Used</a>
                     <p class="from">From: <a href="#">San Francisco, US</a></p>
                   </div>
                   <div class="item-footer">
                     <div class="add"><i class="far fa-plus-square"></i></div>
-                    <div class="price"><a href="#">$250</a></div>
+                    <div><a class="price" href="#">$250</a></div>
                   </div>
-                </div>
+                </article>
               </div>
             </li>
           </ul>
@@ -1027,10 +1045,16 @@
           class="glide__arrows mobile-grid-controls"
           data-glide-el="controls"
         >
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <button
+            class="glide__arrow glide__arrow--left arrow-left-desktop"
+            data-glide-dir="<"
+          >
             &lt;
           </button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <button
+            class="glide__arrow glide__arrow--right arrow-right-desktop"
+            data-glide-dir=">"
+          >
             >
           </button>
         </div>
@@ -1096,17 +1120,17 @@
 
         <div class="footer-options">
           <ul>
-            <li>
+            <li class="option-container">
               <div class="selector-title">COUNTRY</div>
-              <button>Switzerland</button>
+              <div class="option-selector">Switzerland</div>
             </li>
-            <li>
+            <li class="option-container">
               <div class="selector-title">LAGUAGE</div>
-              <button>English</button>
+              <div class="option-selector">English</div>
             </li>
-            <li>
+            <li class="option-container">
               <div class="selector-title">CURRENCY</div>
-              <button>US DOLLAR</button>
+              <div class="option-selector">US DOLLAR</div>
             </li>
           </ul>
         </div>

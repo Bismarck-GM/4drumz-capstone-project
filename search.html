@@ -18,87 +18,173 @@
   <body>
     <header>
       <nav class="nav-main">
-        <ul class="">
+        <ul class="nav-main-left">
           <li>
             <a href="index.html">
               <div class="nav-logo"></div>
             </a>
           </li>
-          <li class="active">
-            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          <li>
+            <a class="nav-links" href="index.html"
+              ><i class="fas fa-home"></i>Home</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-puzzle-piece"></i>Collections</a>
+            <a class="nav-links active" href="search.html"
+              ><i class="fas fa-puzzle-piece"></i>Collections</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-shopping-cart"></i> Purchase List</a>
+            <a class="nav-links" href="#"
+              ><i class="fas fa-shopping-cart"></i> Purchase List</a
+            >
           </li>
           <li>
             <button class="nav-button btn-pink">POST AN ADD</button>
           </li>
         </ul>
-        <ul>
+        <ul class="nav-main-right">
           <li>
-            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a class="nav-links" href="#"><i class="fas fa-envelope"></i></a>
           </li>
-          <li><a href="#">User</a></li>
+          <li><a class="nav-links" href="#">User</a></li>
         </ul>
       </nav>
     </header>
     <section class="search-section search-main">
-      <div class="main-titles">
-        <div class="main-logo"></div>
-        <h2>Buying and selling percusion couldn't be simpler than this!</h2>
+      <div class="top-container">
+        <div class="main-titles">
+          <div class="main-logo"></div>
+          <h1>Buying and selling percusion couldn't be simpler than this!</h1>
+        </div>
+        <form class="search-form2" action="search.html">
+          <select name="section-selector" class="section-selector">
+            <option value="All-Sections" selected>All Sections</option>
+            <option value="cymbals">Cymbals</option>
+            <option value="drums">Drums</option>
+            <option value="hardware">Hardware</option>
+            <option value="others">Others</option>
+          </select>
+          <input
+            class="form2-input"
+            type="text"
+            placeholder="What do you search for ?"
+          />
+          <input class="form2-input" type="text" placeholder="Where" />
+          <button class="form2-button" type="submit" value="submit">
+            Search
+          </button>
+        </form>
       </div>
-      <form class="search-form">
-        <select name="section-selector" id="section-selector">
-          <option value="All-Sections" selected>All Sections</option>
-          <option value="cymbals">Cymbals</option>
-          <option value="drums">Drums</option>
-          <option value="hardware">Hardware</option>
-          <option value="others">Others</option>
-        </select>
-        <input type="text" placeholder="What do you search for ?" />
-        <input type="text" placeholder="Where" />
-        <button>Search</button>
-      </form>
     </section>
     <div class="main-results-grid">
       <section class="filters">
-        <form action="filters" class="status-check">
-          <input type="checkbox" id="new" name="new" value="new" />
-          <label for="new"> New</label><br />
-          <input type="checkbox" id="used" name="used" value="used" />
-          <label for="used"> Used</label><br />
+        <form action="filters" class="status-check check-spacing">
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="new"
+            name="new"
+            value="new"
+          />
+          <label class="check-spacing" for="new"> New</label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="used"
+            name="used"
+            value="used"
+          />
+          <label class="check-spacing" for="used"> Used</label><br />
         </form>
         <h2 class="filters-title">Type</h2>
-        <form action="type" class="type-check">
-          <input type="checkbox" id="Crash" name="Crash" value="Crash" />
-          <label for="Crash"> Crash </label><br />
-          <input type="checkbox" id="Hi-Hats" name="Hi-Hats" value="Hi-Hats" />
-          <label for="Hi-Hats"> Hi-Hats</label><br />
-          <input type="checkbox" id="Ride" name="Ride" value="Ride" />
-          <label for="Ride"> Ride</label><br />
+        <form action="type" class="type-check check-spacing">
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="Crash"
+            name="Crash"
+            value="Crash"
+          />
+          <label class="check-spacing" for="Crash"> Crash </label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="Hi-Hats"
+            name="Hi-Hats"
+            value="Hi-Hats"
+          />
+          <label class="check-spacing" for="Hi-Hats"> Hi-Hats</label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="Ride"
+            name="Ride"
+            value="Ride"
+          />
+          <label class="check-spacing" for="Ride"> Ride</label><br />
         </form>
         <h2 class="filters-title">Inches</h2>
-        <form action="filters" class="inches-check">
-          <input type="checkbox" id="12" name="12" value="12" />
-          <label for="12"> 12"</label><br />
-          <input type="checkbox" id="14" name="14" value="14" />
-          <label for="14"> 14"</label><br />
-          <input type="checkbox" id="16" name="16" value="16" />
-          <label for="16"> 16"</label><br />
+        <form action="filters" class="inches-check check-spacing">
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="12"
+            name="12"
+            value="12"
+          />
+          <label class="check-spacing" for="12"> 12"</label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="14"
+            name="14"
+            value="14"
+          />
+          <label class="check-spacing" for="14"> 14"</label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="16"
+            name="16"
+            value="16"
+          />
+          <label class="check-spacing" for="16"> 16"</label><br />
         </form>
         <h2 class="filters-title">Price Range</h2>
-        <form action="filters" class="price-check">
-          <input type="checkbox" id="100" name="100" value="100" />
-          <label for="100"> $100</label><br />
-          <input type="checkbox" id="150" name="150" value="150" />
-          <label for="150"> $150</label><br />
-          <input type="checkbox" id="200" name="200" value="200" />
-          <label for="200"> $200</label><br />
-          <input type="checkbox" id="250" name="250" value="250" />
-          <label for="250"> $250</label><br />
+        <form action="filters" class="price-check check-spacing">
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="100"
+            name="100"
+            value="100"
+          />
+          <label class="check-spacing" for="100"> $100</label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="150"
+            name="150"
+            value="150"
+          />
+          <label class="check-spacing" for="150"> $150</label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="200"
+            name="200"
+            value="200"
+          />
+          <label class="check-spacing" for="200"> $200</label><br />
+          <input
+            class="check-spacing"
+            type="checkbox"
+            id="250"
+            name="250"
+            value="250"
+          />
+          <label class="check-spacing" for="250"> $250</label><br />
         </form>
       </section>
       <div class="print-search-results">
@@ -264,17 +350,17 @@
 
         <div class="footer-options">
           <ul>
-            <li>
+            <li class="option-container">
               <div class="selector-title">COUNTRY</div>
-              <button>Switzerland</button>
+              <div class="option-selector">Switzerland</div>
             </li>
-            <li>
+            <li class="option-container">
               <div class="selector-title">LAGUAGE</div>
-              <button>English</button>
+              <div class="option-selector">English</div>
             </li>
-            <li>
+            <li class="option-container">
               <div class="selector-title">CURRENCY</div>
-              <button>US DOLLAR</button>
+              <div class="option-selector">US DOLLAR</div>
             </li>
           </ul>
         </div>
