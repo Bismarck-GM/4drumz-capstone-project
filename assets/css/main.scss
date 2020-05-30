@@ -375,7 +375,7 @@ i {
       color: #dbdbdb;
     }
 
-    .price a {
+    .price {
       font-size: 5vw;
       color: $pink;
     }
@@ -417,61 +417,68 @@ i {
 }
 
 .links-title {
-  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  font-family: $gb;
   font-size: 15px;
   color: $pink;
   border-bottom: 2px solid $pink;
   padding-bottom: 2px;
   margin-bottom: 5px;
 }
+
 .links-list {
   display: flex;
+
+  a {
+    font-family: $g;
+    color: $grey;
+  }
+
   ul {
     flex-grow: 1;
+
     li {
       margin: 5px 0;
     }
-    a {
-      font-family: "Gotham", Arial, Helvetica, sans-serif;
-      color: $grey;
-    }
   }
 }
-.footer-options {
-  li {
+
+.option-container {
+  display: flex;
+  justify-content: flex-end;
+  font-family: $gb;
+  font-size: 15px;
+  color: $pink;
+  margin-bottom: 15px;
+
+  .selector-title {
     display: flex;
-    justify-content: flex-end;
-    font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: $pink;
-    margin-bottom: 15px;
-    .selector-title {
-      display: flex;
-      align-items: center;
-      margin-right: 10px;
-      flex-basis: 35%;
-    }
-    button {
-      width: 65%;
-      font-family: "Gotham", Arial, Helvetica, sans-serif;
-      color: $grey;
-      background-color: white;
-      border: 1px solid $grey;
-      height: 30px;
-      flex-grow: 1;
-      &:last-child {
-        min-width: 160px;
-      }
-    }
+    align-items: center;
+    margin-right: 10px;
+    flex-basis: 35%;
   }
 }
+
+.option-selector {
+  text-align: center;
+  line-height: 2;
+  width: 65%;
+  font-family: $g;
+  color: $grey-dark;
+  border: 1px solid $grey;
+  height: 30px;
+  flex-grow: 1;
+
+  &:last-child {
+    min-width: 160px;
+  }
+}
+
 .footer-copyright {
   display: block;
   border-top: 1px solid $grey;
   color: #919aa1;
   .copyright-left {
     @include flex-centered();
-
     text-align: center;
     margin-top: 15px;
   }

@@ -455,7 +455,7 @@ i {
   color: #dbdbdb;
 }
 
-.grid-item .item-footer .price a {
+.grid-item .item-footer .price {
   font-size: 5vw;
   color: #d35266;
 }
@@ -523,6 +523,11 @@ i {
   display: flex;
 }
 
+.links-list a {
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  color: #888;
+}
+
 .links-list ul {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -533,12 +538,7 @@ i {
   margin: 5px 0;
 }
 
-.links-list ul a {
-  font-family: "Gotham", Arial, Helvetica, sans-serif;
-  color: #888;
-}
-
-.footer-options li {
+.option-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,7 +551,7 @@ i {
   margin-bottom: 15px;
 }
 
-.footer-options li .selector-title {
+.option-container .selector-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,11 +563,12 @@ i {
       flex-basis: 35%;
 }
 
-.footer-options li button {
+.option-selector {
+  text-align: center;
+  line-height: 2;
   width: 65%;
-  font-family: "Gotham", Arial, Helvetica, sans-serif;
-  color: #888;
-  background-color: white;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  color: #383838;
   border: 1px solid #888;
   height: 30px;
   -webkit-box-flex: 1;
@@ -575,7 +576,7 @@ i {
           flex-grow: 1;
 }
 
-.footer-options li button:last-child {
+.option-selector:last-child {
   min-width: 160px;
 }
 
