@@ -417,7 +417,21 @@ i {
 }
 
 .grid-item .item-info > * {
-  margin: 10px 0;
+  margin: 8% 0 0;
+}
+
+.grid-item .item-title {
+  font-size: 3vw;
+}
+
+.grid-item .status {
+  display: block;
+  color: #d35266;
+  font-size: 2.2vw;
+}
+
+.grid-item .from {
+  font-size: 2vw;
 }
 
 .grid-item .item-footer {
@@ -433,7 +447,7 @@ i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 6% 0px 0 0px;
+  margin: 15% 0 0;
 }
 
 .grid-item .item-footer .add {
@@ -491,6 +505,7 @@ i {
   margin-top: -15px;
   text-align: center;
   color: #919aa1;
+  font-size: 2vw;
 }
 
 .links-title {
@@ -684,7 +699,7 @@ i {
 .glide__bullets {
   position: absolute;
   z-index: 2;
-  bottom: 0.5em;
+  bottom: 0.3em;
   left: 50%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
