@@ -42,40 +42,41 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 3%;
   height: 40px;
   width: 100%;
-  background-color: $grey-dark;
   position: fixed;
   top: 0;
   z-index: 99;
+  background-color: $grey-dark;
+}
 
-  .nav-main-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-basis: 98%;
-    li,
-    i {
-      margin-right: 2px;
-    }
+.nav-main-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 100%;
+  li,
+  i {
+    margin-right: 2px;
   }
 }
 
-.nav-main-right {
-  display: none;
+.nav-logo {
+  background-image: url(../images/logos/4drumzLogo.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 40px;
+  width: 88px;
 }
 
 .nav-button {
   display: none;
 }
 
-.nav-logo {
-  background-image: url(../images/logos/4drumzLogo.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  height: 40px;
-  width: 88px;
+.nav-main-right {
+  display: none;
 }
 
 .nav-links {
@@ -177,7 +178,8 @@ i {
 }
 
 .publicity-slider {
-  @include flex-centered();
+  display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 15px 0;
 
@@ -246,12 +248,14 @@ i {
 
     button {
       background-color: $pink;
+      font-family: $g;
       font-size: 2vw;
       border: 1px solid $pink-dark;
       color: white;
+      padding: 3%;
     }
     button:first-child {
-      flex-basis: 28%;
+      flex-basis: 30%;
       border-right: 0.5px solid $pink-dark;
       border-radius: 3px 0 0 3px;
     }
@@ -467,11 +471,11 @@ i {
 }
 
 .hot-ads-item1 {
-  background-image: url(../images/Ziljian-A-Custom.jpg);
+  background-image: url(../images/ziljian-avedis-square-picture.jpg);
 }
 
 .item1 {
-  background-image: url(../images/Ziljian-A-Custom.jpg);
+  background-image: url(../images/ziljian-avedis-square-picture.jpg);
 }
 
 /* ---------------------------- HELPER CLASSES ---------------------------- */
@@ -481,7 +485,6 @@ i {
   color: white;
   padding: 3%;
   border: 1px solid $pink-dark;
-  font-size: 2vw;
   border-radius: 3px;
   font-family: $g;
 }
@@ -691,15 +694,15 @@ i {
 }
 
 /* ---------------------------- MQ NAV LOGO RESIZE ---------------------------- */
-@media screen and (min-width: 450px) {
-  .nav-main {
-    .nav-logo {
-      height: 40px;
-      width: 122px;
-      margin-left: 25px;
-    }
-  }
-}
+// @media screen and (min-width: 450px) {
+//   .nav-main {
+//     .nav-logo {
+//       height: 40px;
+//       width: 122px;
+//       margin-left: 25px;
+//     }
+//   }
+// }
 
 /* ---------------------------- MQ +768 ---------------------------- */
 
