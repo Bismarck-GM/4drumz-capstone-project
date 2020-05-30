@@ -979,6 +979,7 @@ i {
   .nav-button {
     display: block;
     font-size: 12px;
+    min-width: 105px;
   }
   .nav-main-right {
     display: -webkit-box;
@@ -987,11 +988,12 @@ i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    justify-self: flex-end;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
   }
   .nav-links {
     font-size: 14px;

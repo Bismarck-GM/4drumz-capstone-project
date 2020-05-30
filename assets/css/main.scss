@@ -781,12 +781,14 @@ i {
   .nav-button {
     display: block;
     font-size: 12px;
+    min-width: 105px;
   }
   .nav-main-right {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-basis: 20%;
+    justify-content: space-between;
+    justify-self: flex-end;
+    flex-basis: 10%;
   }
   .nav-links {
     font-size: 14px;
