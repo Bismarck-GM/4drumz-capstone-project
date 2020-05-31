@@ -3,7 +3,7 @@
 Online Shop:
 HTML & CSS Capstone Project is based on an online shop for electronics. Following the desing of [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX) (by Mohammed Awad).
 
-![screenshot](/assets/images/screenshot-1.png)
+![screenshot](/assets/images/screenshot.png)
 ![screenshot](/assets/images/screenshot-2.png)
 
 ## Built With
